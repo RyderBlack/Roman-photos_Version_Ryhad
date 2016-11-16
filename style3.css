@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    background-color: rgba(192,192,192,0.6);
+}
+
+
+/*MENU*/
+
+.menu {
+    margin: auto;
+    background-color: #000;
+    margin-bottom: 40px;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.flexmenu {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.item {
+    text-decoration: none;
+    color: #Fff;
+    font-size: 35px;
+    font-family: norm;
+    text-align: center;
+    display: inline-block;
+}
+
+.item:hover {
+    font-family: hacked;
+}
+
+li {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: auto;
+    height: auto;
+}
+
+li:hover {
+    background-color: rgba(255, 4, 4, 0.91);
+}
+
+
+/*PAGE DE LA BD*/
+
+main {
+    margin: 0 auto;
+    width: 750px;
+    background-color: white;
+    box-shadow: 3px 10px 5px 5px #656565;
+}
+
+.background-header {
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-left: 250px;
+    z-index: 2;
+    font-family: 'Billabong';
+    font-size: 80px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.vignette {
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    /*border: 2px solid black;*/
+    margin-bottom: 30px;
+    margin-top: -30px;
+}
+
+.vignette>img {
+    width: 700px;
+    height: auto;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.actionbar-et-likes {
+    border-bottom: 1px solid lightGrey;
+}
+
+.likes {
+    border-bottom: 1px solid lightGrey;
+}
+
+
+/* BULLE DE DIALOGUE */
+
+.bulle.one {
+    position: relative;
+    z-index: 1;
+}
+
+.bulle_img.one {
+    position: absolute;
+    left: 360px;
+    top: -25px;
+    width: 225px;
+    height: 160px;
+    z-index: 2;
+}
+
+.bulle_p.one {
+    position: absolute;
+    left: 430px;
+    top: -25px;
+    font-family: ComicBook;
+    font-size: 24px;
+    z-index: 3;
+    text-align: center;
+    color: darkblue;
+}
+
+.bulle.two {
+    position: relative;
+    z-index: 1;
+}
+
+.bulle_img.two {
+    position: absolute;
+    left: 90px;
+    top: -25px;
+    width: 225px;
+    height: 160px;
+    z-index: 2;
+}
+
+.bulle_p.two {
+    position: absolute;
+    left: 115px;
+    top: -20px;
+    font-family: ComicBook;
+    font-size: 24px;
+    z-index: 3;
+    text-align: center;
+    color: darkblue;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.page_footer a {
+    font-family: norm;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.page_footer a:hover {
+    font-family: hacked;
+}
+
+.page_footer {
+    display: inline-block;
+    margin: 4px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.page_footer.wednesday a {
+    color: red;
+}
+
+
+/*TYPO*/
+
+
+/*TYPO MENU:hover*/
+
+@font-face {
+    font-family: 'hacked';
+    src: url('typo/HACKED.ttf');
+}
+
+
+/*TYPO MENU*/
+
+@font-face {
+    font-family: 'norm';
+    src: url('typo/BebasNeue.otf');
+}
+
+
+/*TYPO BULLE*/
+
+@font-face {
+    font-family: 'ComicBook';
+    src: url('typo/ComicBook.otf');
+}
+
+
+/*TYPO Instagram Logo*/
+
+@font-face {
+    font-family: 'Billabong';
+    src: url('typo/Billabong.ttf');
+}
+
+
+/* Aside */
+
+.aside_flottant {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    margin-top: 430px;
+    z-index: 3;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    animation-name: aside;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+}
+
+
+/*Mission echouee */
+
+.aside_mission0 {
+    display: inline-block;
+    color: red;
+    font-size: 22px;
+}
+
+
+/*Mission accomplie */
+
+.aside_mission1 {
+    display: inline-block;
+    color: green;
+    font-size: 22px;
+}
+
+
+/*regle */
+
+.aside_rule {
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+}
+
+@keyframes aside {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        transform: translateY(100);
+    }
+    50% {
+        transform: translateY(60px);
+    }
+}
+
+
+/*notif_mail animation*/
+
+.notif_mail p {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: white;
+    z-index: 5;
+    width: 10%;
+    border-radius: 10px;
+    padding: 1.5px;
+    position: absolute;
+    animation-name: notif;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+@keyframes notif {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        transform: translateX(10);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+}
+
+
+/*GESTION DU FORMAT D'ECRAN*/
+
+@media screen and (max-width: 500px) {
+    main {
+        width: auto;
+    }
+    .aside_flottant {
+        display: none;
+    }
+}
+
+
+/*
+@media screen and (max-width: 700px) {
+    .main {
+        height: 550px;
+        width: 550px;
+    }
+    .item {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        height: auto;
+        width: 95vw;
+        justify-content: center;
+        align-item: center;
+    }
+    .item {
+        font-size: 25px;
+    }
+    .page_footer {
+        display: none;
+    }
+    .vignette {
+        width: 95%;
+        margin-bottom: 5%;
+    }
+}
+*/
